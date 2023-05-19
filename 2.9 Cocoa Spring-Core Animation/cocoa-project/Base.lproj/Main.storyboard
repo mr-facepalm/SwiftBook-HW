@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cocoa_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xav-ag-Qtq">
+                                <rect key="frame" x="76.666666666666686" y="149" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXH-lY-cXd">
+                                        <rect key="frame" x="49.333333333333329" y="51.33333333333335" width="141" height="25.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="bXH-lY-cXd" firstAttribute="centerY" secondItem="xav-ag-Qtq" secondAttribute="centerY" id="E6k-pW-uEZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="SVW-4m-sut"/>
+                                    <constraint firstItem="bXH-lY-cXd" firstAttribute="centerX" secondItem="xav-ag-Qtq" secondAttribute="centerX" id="oE0-zo-Tzs"/>
+                                    <constraint firstAttribute="width" constant="240" id="xs5-yg-Ocr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J44-98-lON">
+                                <rect key="frame" x="76.666666666666686" y="658" width="240" height="40"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run Core Animation">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="coreAnimationButtonPressd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbL-JS-aMI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dc-TW-3sk" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="76.666666666666686" y="312" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKd-H9-MKP">
+                                        <rect key="frame" x="41.333333333333329" y="51" width="157" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="avB-kT-sK9"/>
+                                    <constraint firstItem="kKd-H9-MKP" firstAttribute="centerX" secondItem="7dc-TW-3sk" secondAttribute="centerX" id="dI3-Kh-7Ao"/>
+                                    <constraint firstItem="kKd-H9-MKP" firstAttribute="centerY" secondItem="7dc-TW-3sk" secondAttribute="centerY" id="kuf-D0-lTc"/>
+                                    <constraint firstAttribute="width" constant="240" id="sww-wb-GCd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="morph"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGt-uZ-21d" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="76.666666666666686" y="718" width="240" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run Spring Animation">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="coreAnimationButtonPressd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="We8-TI-ZUh"/>
+                                    <action selector="springAnimationButtonPressd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3RK-Zj-z1G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xav-ag-Qtq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="1We-0e-9L9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xGt-uZ-21d" secondAttribute="bottom" constant="60" id="1hb-yE-9uT"/>
+                            <constraint firstItem="7dc-TW-3sk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EMi-yz-KBl"/>
+                            <constraint firstItem="J44-98-lON" firstAttribute="width" secondItem="xav-ag-Qtq" secondAttribute="width" id="HAg-0A-nJ2"/>
+                            <constraint firstItem="J44-98-lON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kbi-dx-DEr"/>
+                            <constraint firstItem="xav-ag-Qtq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tav-Rr-npH"/>
+                            <constraint firstItem="xGt-uZ-21d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7o-h8-aOZ"/>
+                            <constraint firstItem="xGt-uZ-21d" firstAttribute="width" secondItem="xav-ag-Qtq" secondAttribute="width" id="hNu-Ru-ygJ"/>
+                            <constraint firstItem="7dc-TW-3sk" firstAttribute="top" secondItem="xav-ag-Qtq" secondAttribute="bottom" constant="35" id="m4A-Ao-JXK"/>
+                            <constraint firstItem="xGt-uZ-21d" firstAttribute="top" secondItem="J44-98-lON" secondAttribute="bottom" constant="20" id="zkj-Kb-1AF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coreAnimationView" destination="xav-ag-Qtq" id="ouJ-20-gNw"/>
+                        <outlet property="springAnimationView" destination="7dc-TW-3sk" id="sQ5-S2-Cqb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
